@@ -1,5 +1,5 @@
 const { debug } = require('console');
-const config = require('./config/config');
+const config = require.main.require('./config/config');
 const axios = require('axios');
 
 let defaultConfig=
