@@ -1,0 +1,34 @@
+{
+  "name": "mongo-event-sourcing",
+  "version": "1.0.0",
+  "description": "mondo db event listener and sourcing",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "serve": "node main.js",
+    "dev": "supervisor  main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeppaman/mongo-event-sourcing.git"
+  },
+  "keywords": [
+    "mongo",
+    "mongodb",
+    "event-sourcing",
+    "webhook"
+  ],
+  "author": "Daniele Fontani (zeppaman)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/zeppaman/mongo-event-sourcing/issues"
+  },
+  "homepage": "https://github.com/zeppaman/mongo-event-sourcing#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.0",
+    "supervisor": "^0.12.0"
+  }
+}
