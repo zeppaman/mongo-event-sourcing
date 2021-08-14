@@ -1,7 +1,11 @@
-# MESS - Mongo DB Event Sourcing
+# <img src="doc/assets/mess.png" align="left" height="60"/>  MESS - Mongo DB Event Sourcing
+
+
+
+
 
 ## What is MESS?
-![](doc/assets/mess.png)  MESS is an opensource tool that implement event sourcing listening event from mongodb. For who is used to play with traditiona RDMS it's something like triggers, but fire events outiside database. This application uses the built-in mongodb feature called ChangeStream.
+**MESS** is an opensource tool that implement event sourcing listening event from mongodb. For who is used to play with traditiona RDMS it's something like triggers, but fire events outiside database. This application uses the built-in mongodb feature called ChangeStream.
 
 So, adding MESS in your architecture you can forward event for data changes to applications by using webhook or simply add event to a  queue like rabbitMQ or Kibana.
 
