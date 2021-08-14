@@ -1,6 +1,8 @@
 # <img src="doc/assets/mess.png" align="left" height="60"/>  MESS - Mongo DB Event Sourcing
 
-
+- [How to install MESS](https://github.com/zeppaman/mongo-event-sourcing/blob/main/README.md#how-to-install-mess)
+- [How to configure MESS](https://github.com/zeppaman/mongo-event-sourcing/blob/main/README.md#how-to-configure-mess)
+- [Licencens](https://github.com/zeppaman/mongo-event-sourcing/blob/main/README.md#license)
 
 
 
