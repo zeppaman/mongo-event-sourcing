@@ -45,5 +45,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: latest, ${{ steps.version-bump.outputs.newTag }}
-        labels: zeppaman/mongo-event-sourcing
+        tags: zeppaman/mongo-event-sourcing:latest, zeppaman/mongo-event-sourcing:${{ steps.version-bump.outputs.newTag }}
