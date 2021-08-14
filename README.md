@@ -1,4 +1,4 @@
-# <img src="doc/assets/mess.png" align="left" height="60"/>  MESS - Mongo DB Event Sourcing
+# <img src="https://github.com/zeppaman/mongo-event-sourcing/raw/main/doc/assets/mess.png" align="left" height="60"/>  MESS - Mongo DB Event Sourcing
 
 
 Documentation
