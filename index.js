@@ -28,7 +28,6 @@ module.exports =
     configFromEnv()
     {
         const dotenv = require('dotenv');
-
         dotenv.config();
         this.config.port = process.env.PORT || 3000;
         this.config.connection = process.env.MONGODB_URL 
@@ -38,7 +37,7 @@ module.exports =
     start()
     {
           this.server.listen(this.config.port, () => {
-            console.log(`Example app listening at http://localhost:${this.config.port}`);
+            console.log(`MESS (Mongo Event Sourcing) listening at http://localhost:${this.config.port}`);
           });
 
           this.watcher( this.config.connection).catch(console.dir);

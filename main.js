@@ -1,6 +1,5 @@
-
-
 const eventSourcing = require('./index');
+
 
 
 eventSourcing

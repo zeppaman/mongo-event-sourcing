@@ -1,0 +1,15 @@
+version: "2"
+services:
+  node:
+    
+    build: ../../
+    #these settings overrides the .env file
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - MONGODB_URL=<my mongo url>
+   # volumes:
+   #  - ./config/:/app/config/
+    expose:
+      - "8081"
+   # command: "npm run serve"
