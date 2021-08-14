@@ -2,7 +2,8 @@ version: "2"
 services:
   node:
     
-    build: ../../
+   # build: ../../
+    image: zeppaman/mongo-event-sourcing
     #these settings overrides the .env file
     environment:
       - NODE_ENV=production
