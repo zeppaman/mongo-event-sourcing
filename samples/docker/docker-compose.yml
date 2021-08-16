@@ -2,8 +2,8 @@ version: "2"
 services:
   node:
     
-    #build: ../../
-    image: zeppaman/mongo-event-sourcing
+    build: ../../
+    # image: zeppaman/mongo-event-sourcing
     #these settings overrides the .env file
     environment:
       - NODE_ENV=production
@@ -15,10 +15,10 @@ services:
       - ./config/:/usr/src/app/config/
     expose:
       - "8081"
-  rabbitmq:
-    image: rabbitmq:3-management-alpine
-    container_name: 'rabbitmq'
-    ports:
-        - 5672:5672
-        - 15672:15672
+  # rabbitmq:
+  #   image: rabbitmq:3-management-alpine
+  #   container_name: 'rabbitmq'
+  #   ports:
+  #       - 5672:5672
+  #       - 15672:15672
    # command: "npm run serve"

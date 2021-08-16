@@ -14,5 +14,5 @@ COPY --from=builder /usr/src/app /usr/src/app
 
 RUN ls /usr/src/app -ll
 
-ENTRYPOINT ["chmod +x /usr/src/app/entrypoint.sh & /usr/src/app/entrypoint.sh"]
-CMD ["/usr/src/app/entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "-c"]
+CMD ["ls -l & chmod +x /usr/src/app/entrypoint.sh & sh /usr/src/app/entrypoint.sh"]
