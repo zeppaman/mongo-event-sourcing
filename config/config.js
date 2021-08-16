@@ -1,3 +1,4 @@
+
 module.exports =  {
     //  changeHook: async function (item) 
     //     {
@@ -28,8 +29,8 @@ module.exports =  {
             {
                
             }
-
-        }
+        },
+       
     ],
     plugins:
     {
@@ -37,7 +38,8 @@ module.exports =  {
         {
             console.log("NOTHING");
             return input;
-        }
+        },
+       
     },
     databases:
     {

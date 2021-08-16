@@ -14,5 +14,5 @@ COPY --from=builder /usr/src/app /usr/src/app
 
 RUN ls /usr/src/app -ll
 
-ENTRYPOINT ["/bin/sh", "-c" , "pwd & ls & npm run serve"]
-CMD ["run serve"]
+ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
+CMD ["/usr/src/app/entrypoint.sh"]

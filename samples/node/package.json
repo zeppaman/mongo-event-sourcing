@@ -4,11 +4,15 @@
   "description": "node sample",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node index.js",
+    "dev": "supervisor  index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongo-event-sourcing": "^1.0.0"
+    "amqplib": "^0.8.0",
+    "mongo-event-sourcing": "^1.0.14",
+    "mongo-event-sourcing-rabbit": "^1.0.2"
   }
 }

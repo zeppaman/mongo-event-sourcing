@@ -29,6 +29,19 @@ module.exports =  {
                
             }
 
+        },
+        {
+            name:"rabbit",
+            config: 
+            {
+               settings:
+               {
+
+                    "connection": "amqp://guest:guest@localhost:5672/"
+                
+                }
+              
+            }
         }
     ],
     plugins:
@@ -37,7 +50,8 @@ module.exports =  {
         {
             console.log("NOTHING");
             return input;
-        }
+        },
+        "rabbit": require("mongo-event-sourcing-rabbit")
     },
     databases:
     {

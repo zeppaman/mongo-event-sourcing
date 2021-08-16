@@ -2,15 +2,23 @@ version: "2"
 services:
   node:
     
-   # build: ../../
+    #build: ../../
     image: zeppaman/mongo-event-sourcing
     #these settings overrides the .env file
     environment:
       - NODE_ENV=production
       - PORT=5000
-      - MONGODB_URL=<my mongo url>
-   # volumes:
-   #  - ./config/:/app/config/
+      - MONGODB_URL=<url>
+      - NPM_PLUGINS=mongo-event-sourcing-rabbit
+      - PRELOAD_SCRIPT=echo "helloworld"
+    volumes:
+      - ./config/:/usr/src/app/config/
     expose:
       - "8081"
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq'
+    ports:
+        - 5672:5672
+        - 15672:15672
    # command: "npm run serve"
