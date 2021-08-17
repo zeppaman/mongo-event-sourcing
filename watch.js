@@ -34,13 +34,14 @@ module.exports =  async function watch(uri) {
           
           for (const collection of collections) 
           {
-            let collectionConf=dbConfig.collections[collection.name];
+            
            
-            if(dbConfig.collections && !collectionConf)
+            if(dbConfig.collections && !dbConfig.collections.hasOwnProperty(collection.name))
             {
               console.log("collection not enabled, skip it");
               continue;
             }
+            let collectionConf=dbConfig.collections[collection.name];
             console.debug(collectionConf);
 
             console.log("..Collection",collection.name);
