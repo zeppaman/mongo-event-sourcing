@@ -9,7 +9,7 @@ Documentation
 
 Resources
 - [MESS on NPMJS](https://www.npmjs.com/package/mongo-event-sourcing)
-- [MESS on Docker Hub](https://hub.docker.com/repository/docker/zeppaman/mongo-event-sourcing)
+- [MESS on Docker Hub](https://hub.docker.com/r/zeppaman/mongo-event-sourcing)
 
 ## What is MESS?
 **MESS** is an opensource tool that implement event sourcing listening event from mongodb. For who is used to play with traditiona RDMS it's something like triggers, but fire events outiside database. This application uses the built-in mongodb feature called ChangeStream.
