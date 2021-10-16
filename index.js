@@ -1,15 +1,25 @@
 const express = require('express')
+const cors = require('cors')
 const watch = require('./watch');
 const app = express()
 
+app.use(cors());
 
+app.use('/app', express.static(__dirname + '/ui/dist'));
 
 let count="1";
 
 app.get('/', (req, res) => {
-  res.send('Changed' +count);
+  res.json({
+    "changed":count
+  });
 })
 
+app.get('/count', (req, res) => {
+  res.json({
+    "changed":count
+  });
+})
 
 
 const background=function() {
