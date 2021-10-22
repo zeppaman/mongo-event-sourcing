@@ -1,6 +1,6 @@
 {
   "name": "mongo-event-sourcing",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "mondo db event listener and sourcing",
   "main": "main.js",
   "scripts": {
